@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+ 
+  font-family: 'Roboto', sans-serif;
+}
+
+
+span {cursor: pointer;}
+
+  .table {
+        border-spacing: 0 15px;
+    }
+
+    .table tr {
+        border-radius: 20px;
+    }
+
+ 
+/*menu avtive*/
+
+
+.active{background-color: rgba(239, 246, 255, var(--tw-bg-opacity)); 
+  border-color: rgba(59, 130, 246, var(--tw-border-opacity));   border-right-width: 0px;
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
+  font-weight: 500;
+
+}
+
+/*scrollbar-hide*/
+
+.scrollbar-hide::-webkit-scrollbar
+{
+  display: none;
+
+}
+ 
+/*login page css*/
+ .input {
+        transition: border 0.2s ease-in-out;
+        min-width: 280px
+        }
+        .input:focus+.label,
+        .input:active+.label,
+        .input.filled+.label {
+        font-size: .75rem;
+        transition: all 0.2s ease-out;
+        top: -0.2rem;
+        color: #667eea;
+        }
+        .label {
+        transition: all 0.2s ease-out;
+        top: 0.5rem;
+        left: 0;
+        }
+ 
+/*new*/
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+    min-width: 280px
+}
+
+.label-float input{
+  font-size: 16px;
+}
+
+.label-float input:focus{
+   
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1.6rem;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid + label{
+  color: red;
+}
+.label-float input:focus:required:invalid{
+  border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0.8rem;
+color: #667eea;
+}
+
+@media  screen  and  (min-width: 1024px) {
+
+  .active
+  {
+    border-right-width: 2px;
+  } 
+}
+
