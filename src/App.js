@@ -7,6 +7,7 @@ import Setting from './Setting';
 import Login from './Login';
 import Testing from './Testing';
 import FreeTrading from './FreeTrading';
+import Investment from './Investment';
 import {Switch, Route, Redirect} from "react-router-dom";
 const App = () => {
 useEffect(() => {
@@ -23,6 +24,7 @@ return(
 <Route exact path="/Login" component={Login} />
 <Route exact path="/Testing" component={Testing} />
 <Route exact path="/FreeTrading" component={FreeTrading} />
+<Route exact path="/investment" component={Investment} />
 <Route exact path="/Clientform" component={Clientform} />
 <Redirect to="/" />
 </Switch>

@@ -5,6 +5,7 @@ const sidebardata =[
 {"path": `/`,"pagename": `Dashboard`,"icon": `home`, "addclass": `hidden`,},
 {"path": `/clients`,"pagename": `Our Clients`,"icon": `people`, "addclass": `hidden`,},
 {"path": `/FreeTrading`,"pagename": `Vartual Trading`,"icon": `equalizer`, "addclass": `hidden`,},
+{"path": `/investment`,"pagename": `Investment `,"icon": `shopping_cart`, "addclass": `hidden`,},
 {"path": `/Message`,"pagename": `Message`,"icon": `email`, "addclass": `block`,},
 {"path": `/Setting`,"pagename": `Setting`,"icon": `settings`, "addclass": `hidden`,},
 ]

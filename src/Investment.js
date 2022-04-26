@@ -3,8 +3,7 @@ import Sidebar from './Sidebar';
 import jQuery from 'jquery';
 import { NavLink } from 'react-router-dom';
 import Stockdetails from './Stockdetails';
-
-const FreeTrading =() => {
+const Investment =() => {
 const amountcarddata =[
 {
 "icon": `account_balance`,
@@ -26,22 +25,18 @@ const amountcarddata =[
 },
 {
 "icon": `trending_up`,
-
 "amountdata": `200 ₹`,
 "subheading":`Founder Profit`,
 "Daychange":`+15.65 (2.29%)`,
 },
 {
 "icon": `trending_up`,
-
 "amountdata": `200 ₹`,
 "subheading":`Founder Profit`,
 "Daychange":`+15.65 (2.29%)`,
 },
 ]
-
 const [openModal, setOpenModal] = React.useState(false);
-
 const [filterOpen, setfilterOpen] = React.useState(false);
 const keywords =[
 {"name": `Mutual Fund`,},{"name": `IPO`,},{"name": `2 Month`,},{"name": `1 Year`,},{"name": `complete`,},{"name": `Progress`,},{"name": `Close`,},{"name": `4% Return `,},
@@ -89,9 +84,10 @@ return(
         {/* drop down end */}
       </div>
       {/* heading */}
-      <div className="">
-        <h1 className="py-4 text-lg font-medium mt-4">Top Gainer</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="py-4 text-lg font-medium mt-4"> Portfolio (4)</h1> <span className="text-sm font-medium text-blue-500">View all orders</span>
       </div>
+      
       {/* three boxes */}
       <div className="grid lg:grid-cols-5 md:grid-cols-2  gap-4 mb-4 ">
         {/*box 1  */}
@@ -260,16 +256,9 @@ return(
                           {/*  */}
                         </main>
                         {/*end  */}
-
-
-
-            </body>
-
-             { openModal && <Stockdetails closeModal = {setOpenModal} />}
-            </>
-            );
-            };
-
-
-
-            export default FreeTrading;
+                      </body>
+                      { openModal && <Stockdetails closeModal = {setOpenModal} />}
+                      </>
+                      );
+                      };
+                      export default Investment;
