@@ -1,20 +1,36 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from './Sidebar'; 
+import MyDocument from './Testing.js'
+import { PDFDownloadLink } from "@react-pdf/renderer";
+ 
+ 
+
+
  const Setting =() => {
   return(
 <>
 <body className="lg:h-screen bg-gray-100 lg:flex">
 
+
 <Sidebar />
+
+
 
   <main className="w-full">
         {/* main work*/}
           {/* component */}
       <div className="h-full overflow-y-auto capitalize p-6 ">
-        
+
+
+      <PDFDownloadLink document={<MyDocument/>} fileName="form">
+        {({loading}) => (loading ? <button>loading document..</button> : <button>Download</button>)}
+      </PDFDownloadLink>
+      
+
           <div>
             <h2 className="text-lg font-medium">Setting</h2>
             <p className="text-gray-500 mb-6 text-sm">here you can edit admin photo, sub title and loign password.</p>
+           
             <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
               <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                 <div className="text-gray-600">
@@ -66,5 +82,5 @@ import Sidebar from './Sidebar';
     );
 
  };
-
+ 
  export default Setting;
