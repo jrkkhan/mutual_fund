@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React  from "react";
 import Sidebar from './Sidebar';
-import jQuery from 'jquery';
-import $ from 'jquery';
+ 
 
 
 const Home =() => {
@@ -40,7 +39,7 @@ return(
         {/*box 1  */}
         {
         amountcarddata.map((elem)=> {
-        const {icon, bgcolor, subcolor, amountdata, subheading} = elem;
+        const {icon, bgcolor, amountdata, subheading} = elem;
         return(
         <div className={bgcolor + " p-6 flex  items-center rounded-md"}>
           {/* icon */}
@@ -95,7 +94,7 @@ return(
         {/* card 2 */}
         <div className="bg-white w-full  rounded-lg p-6">
           <h1 className="font-semibold">IPO Performance</h1>
-          <div className="flex items-center py-2 "> <img src="https://www.adityabirla.com/assets/images/logo.jpg" className="w-10" />
+          <div className="flex items-center py-2 "> <img alt="stockimg" src="https://www.adityabirla.com/assets/images/logo.jpg" className="w-10" />
             <span className="text-sm ml-2 ">Aditya birla AMC</span></div>
             <div className="w-full px-4 text-center ">
               <div className="flex justify-center py-4 lg:pt-4 pt-8 space-x-4">
@@ -123,17 +122,17 @@ return(
               <h1 className="font-semibold text-sm">Next target IPO</h1>
               {/* 1 */}
               <div className="flex justify-between items-center text-sm py-2">
-                <div className="flex "> <img src="https://assetscdn1.paytm.com/frontendcommonweb/11272962.svg" className="w-10" /> <p className="ml-3 font-medium ">Paytm</p></div>
+                <div className="flex "> <img alt="stockimg" src="https://assetscdn1.paytm.com/frontendcommonweb/11272962.svg" className="w-10" /> <p className="ml-3 font-medium ">Paytm</p></div>
                 <div className="text-gray-500">1 Oct 2021</div>
               </div>
               {/* 2 */}
               <div className="flex justify-between items-center text-sm py-2">
-                <div className="flex "> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Policybazaar_Logo.gif/220px-Policybazaar_Logo.gif" className="w-10" /> <p className="ml-3 font-medium ">Policy bazaar</p></div>
+                <div className="flex "> <img alt="stockimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Policybazaar_Logo.gif/220px-Policybazaar_Logo.gif" className="w-10" /> <p className="ml-3 font-medium ">Policy bazaar</p></div>
                 <div className="text-gray-500">25 Oct 2021</div>
               </div>
               {/* 3 */}
               <div className="flex justify-between items-center text-sm py-2">
-                <div className="flex "> <img src="https://licindia.in/CorporateSiteDemo/media/LIC_Media/LIC_LOGO_1.png" className="w-10" /> <p className="ml-3 font-medium ">LIC</p></div>
+                <div className="flex "> <img alt="stockimg" src="https://licindia.in/CorporateSiteDemo/media/LIC_Media/LIC_LOGO_1.png" className="w-10" /> <p className="ml-3 font-medium ">LIC</p></div>
                 <div className="text-gray-500">5 nov 2021</div>
               </div>
             </div>

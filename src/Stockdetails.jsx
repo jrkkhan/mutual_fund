@@ -7,7 +7,6 @@ function Stockdetails({ closeModal }) {
 
   const [openModal, setOpenModal] = React.useState(false);
 
-  const [filterOpen, setfilterOpen] = React.useState(false);
   return (
     <>
       {/*stock details section*/}

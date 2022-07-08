@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Sidebar from './Sidebar';
-import jQuery from 'jquery';
 import { NavLink } from 'react-router-dom';
 import Stockdetails from './Stockdetails';
 
@@ -97,11 +96,11 @@ return(
         {/*box 1  */}
         {
         amountcarddata.map((elem)=> {
-        const {icon, subcolor, amountdata, subheading, Daychange} = elem;
+        const {amountdata, subheading, Daychange} = elem;
         return(
         <div onClick= {() => setOpenModal(true)} className={"bg-white p-4 rounded-md space-y-2   cursor-pointer"}>
           {/* stock img */}
-          <div className= "bg-white bg-opacity-10   p-1 rounded-lg text-white w-12 " ><img src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_logo.png"/> </div>
+          <div className= "bg-white bg-opacity-10   p-1 rounded-lg text-white w-12 " ><img alt="stockimg" src="https://www.tatamotors.com/wp-content/themes/tatamotors_2019/images/tata_logo.png"/> </div>
           <div className="w-full space-y-2">
             <p className="text-sm font-medium text-gray-800 truncate">{subheading}</p>
             <div> <h1 className="text-sm font-medium text-gray-600">{amountdata}</h1>
@@ -121,11 +120,11 @@ return(
           {/*box 1  */}
           {
           amountcarddata.map((elem)=> {
-          const {icon, subcolor, amountdata, subheading, Daychange} = elem;
+          const { amountdata, subheading, Daychange} = elem;
           return(
           <div  onClick= {() => setOpenModal(true)} className={"bg-white p-4 rounded-md space-y-2  cursor-pointer"}>
             {/* icon */}
-            <div className= "bg-white bg-opacity-10   p-1 rounded-lg text-white w-12 " ><img src="https://www.wipro.com/content/dam/nexus/en/brand/images/wipro-primary-logo-color-rbg.png"/> </div>
+            <div className= "bg-white bg-opacity-10   p-1 rounded-lg text-white w-12 " ><img alt="stockimg" src="https://www.wipro.com/content/dam/nexus/en/brand/images/wipro-primary-logo-color-rbg.png"/> </div>
             <div className="w-full space-y-2">
               <p className="text-sm font-medium text-gray-800 truncate">{subheading}</p>
               <div> <h1 className="text-sm font-medium text-gray-600">{amountdata}</h1>

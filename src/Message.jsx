@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React  from "react";
 import Sidebar from './Sidebar'; 
 
 const Message =() => {
@@ -49,7 +49,7 @@ return(
         {
         
         messagedata.map((elem) =>{
-        const {icon, bgcolor, heading, text, iconcolor } = elem;
+        const {icon, heading, text, iconcolor } = elem;
         return(
         <div className="bg-white p-4 rounded-lg flex justify-between items-start">
           <span className={ iconcolor + " material-icons p-2  rounded-full"}>{icon}</span>

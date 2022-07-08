@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Sidebar from './Sidebar';
-import jQuery from 'jquery';
-import { NavLink } from 'react-router-dom';
+ 
 import Stockdetails from './Stockdetails';
 const Investment = () => {
   const [openModal, setOpenModal] = React.useState(false);

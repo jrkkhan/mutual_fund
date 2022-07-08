@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import ReactDOM from 'react-dom';
+import React, { useState } from "react";
+ 
  import { NavLink } from 'react-router-dom';
 
 const Login =() => {
@@ -13,16 +13,12 @@ const Login =() => {
 
   };
 
-
-
- 
-
 return(
 <>
 <body className=" bg-gray-100 flex justify-center items-center h-screen">
   <div>
     <div className="shadow-xl p-10 bg-white max-w-xl rounded-lg mb-10">
-      <div className="flex justify-center mb-8"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" className="w-24" /></div>
+      <div className="flex justify-center mb-8"><img alt="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" className="w-24" /></div>
       <h1 className="text-2xl font-black mb-4  ">Login</h1>
 
         <div className="label-float mb-4">
@@ -32,7 +28,7 @@ return(
  
       <div className="label-float mb-4">
         <input type="text" placeholder=" " className="border appearance-none rounded w-full px-3 py-3 transition duration-200 focus:ring-1 focus:outline-none active:outline-none active:border-indigo-600"
-         name="password"  type={passwordShown ? "text" : "password"} autofocus/>
+         name="password" type={passwordShown ? "text" : "password"} autofocus/>
         <label className="px-3 text-gray-400 text-sm">Password</label>
         <i className="material-icons-outlined absolute right-4 top-6 cursor-pointer text-lg text-gray-500" onClick={togglePassword}>visibility</i> 
         <p className="text-xs text-gray-500 py-2 cursor-pointer text-blue-500 transition duration-200 capitalize">Forgot password</p>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect } from "react";
 import Home from './Home';
 import Clients from './Clients';
 import Clientform from './Clientform';
@@ -23,7 +23,8 @@ return(
 <Route exact path="/Message" component={Message} />
 <Route exact path="/Setting" component={Setting} />
 <Route exact path="/Login" component={Login} />
-<Route exact path="/testing" component={Testing} />
+<Route exact path="/Testing" component={Testing} />
+
 <Route exact path="/FreeTrading" component={FreeTrading} />
 <Route exact path="/investment" component={Investment} />
 <Route exact path="/Clientform" component={Clientform} />
